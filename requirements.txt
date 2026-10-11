@@ -1,0 +1,15 @@
+# AgriWeed AI - Agricultural Weed Detection & Potential Yield Impact Estimator
+# Pinned tested dependencies for Python 3.11 / 3.12 (Windows 64-bit)
+
+streamlit>=1.35.0,<1.44.0
+ultralytics>=8.2.0,<8.4.0
+torch>=2.2.0
+torchvision>=0.17.0
+opencv-python-headless>=4.9.0.80
+pillow>=10.2.0
+numpy>=1.26.0,<2.1.0
+pandas>=2.2.0
+plotly>=5.20.0
+pytest>=8.0.0
+reportlab>=4.1.0
+requests>=2.31.0

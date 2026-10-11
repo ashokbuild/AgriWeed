@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+.venv/
+venv/
+ENV/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# IDE
+.vscode/
+.idea/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local data & weights
+data/analyses/*.json
+data/uploads/*
+data/processed/*
+data/exports/*
+!data/analyses/.gitkeep
+!data/uploads/.gitkeep
+!data/processed/.gitkeep
+!data/exports/.gitkeep
+models/*.pt
+models/*.onnx
+!models/README.md
+
+# OS
+.DS_Store
+Thumbs.db

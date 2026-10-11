@@ -1,0 +1,209 @@
+/* AgriWeed AI - Precision Agriculture Theme */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --agri-dark: #0B2317;
+  --agri-forest: #16402E;
+  --agri-pine: #235A42;
+  --agri-emerald: #10B981;
+  --agri-lime: #84CC16;
+  --agri-lime-light: #ECFCCB;
+  --agri-danger: #EF4444;
+  --agri-danger-light: #FEE2E2;
+  --agri-warning: #F59E0B;
+  --agri-bg-light: #F8FAF8;
+  --agri-card-bg: #FFFFFF;
+  --agri-border: #E5E7EB;
+  --agri-text-main: #111827;
+  --agri-text-muted: #4B5563;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+html, body, [class*="css"] {
+  font-family: var(--font-sans);
+  color: var(--agri-text-main);
+}
+
+/* Header & Banner */
+.agri-banner {
+  background: linear-gradient(135deg, #0B2317 0%, #16402E 60%, #235A42 100%);
+  color: #FFFFFF;
+  padding: 1.75rem 2rem;
+  border-radius: 14px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 20px -2px rgba(11, 35, 23, 0.25);
+  border: 1px solid rgba(132, 204, 22, 0.2);
+}
+
+.agri-banner h1 {
+  color: #FFFFFF !important;
+  font-size: 2rem !important;
+  font-weight: 800 !important;
+  margin: 0 !important;
+  letter-spacing: -0.02em;
+}
+
+.agri-banner p {
+  color: #D1FAE5 !important;
+  font-size: 0.95rem !important;
+  margin: 0.4rem 0 0 0 !important;
+}
+
+/* Metric Cards */
+.agri-card {
+  background: #FFFFFF;
+  border: 1px solid var(--agri-border);
+  border-radius: 12px;
+  padding: 1.25rem 1.25rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.agri-card:hover {
+  box-shadow: 0 4px 12px -1px rgba(0, 0, 0, 0.08);
+}
+
+.agri-metric-val {
+  font-size: 1.85rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0.25rem 0;
+  font-family: var(--font-sans);
+}
+
+.agri-metric-val.gain {
+  color: #059669;
+}
+
+.agri-metric-val.loss {
+  color: #DC2626;
+}
+
+.agri-metric-val.neutral {
+  color: #1F2937;
+}
+
+.agri-metric-val.weed {
+  color: #DC2626;
+}
+
+.agri-metric-val.crop {
+  color: #166534;
+}
+
+.agri-metric-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6B7280;
+}
+
+.agri-metric-sub {
+  font-size: 0.8rem;
+  color: #9CA3AF;
+  margin-top: 0.2rem;
+}
+
+/* Status Badges */
+.agri-badge {
+  display: inline-block;
+  padding: 0.2rem 0.65rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.badge-weed-free {
+  background-color: #D1FAE5;
+  color: #065F46;
+}
+
+.badge-low {
+  background-color: #ECFCCB;
+  color: #3F6212;
+}
+
+.badge-moderate {
+  background-color: #FEF3C7;
+  color: #92400E;
+}
+
+.badge-high {
+  background-color: #FFEDD5;
+  color: #9A3412;
+}
+
+.badge-severe {
+  background-color: #FEE2E2;
+  color: #991B1B;
+}
+
+/* Disclaimer Callout Box */
+.agri-disclaimer {
+  background-color: #FFFBEB;
+  border-left: 4px solid #F59E0B;
+  padding: 0.85rem 1.15rem;
+  border-radius: 6px;
+  color: #78350F;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  margin: 1rem 0;
+}
+
+.agri-info-box {
+  background-color: #F0FDF4;
+  border-left: 4px solid #10B981;
+  padding: 0.85rem 1.15rem;
+  border-radius: 6px;
+  color: #064E3B;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  margin: 0.75rem 0;
+}
+
+/* Section Header */
+.section-title {
+  color: var(--agri-forest);
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin: 1.25rem 0 0.75rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Sidebar styling */
+[data-testid="stSidebar"] {
+  background-color: #0B2317 !important;
+}
+
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p,
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] span {
+  color: #E2E8F0 !important;
+}
+
+[data-testid="stSidebar"] [data-testid="stSidebarNav"] {
+  padding-top: 1rem;
+}
+
+/* Buttons */
+.stButton>button {
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  transition: all 0.15s ease !important;
+}
+
+.stButton>button[kind="primary"] {
+  background-color: #16402E !important;
+  border-color: #16402E !important;
+  color: #FFFFFF !important;
+}
+
+.stButton>button[kind="primary"]:hover {
+  background-color: #235A42 !important;
+  border-color: #235A42 !important;
+}
